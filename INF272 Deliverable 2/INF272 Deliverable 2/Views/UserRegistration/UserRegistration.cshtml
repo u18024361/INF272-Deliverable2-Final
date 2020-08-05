@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "UserRegistration";
+}
+
+<head>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<style>
+    .hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+</style>
+
+<form class="form-horizontal">
+    <fieldset>
+        <div id="legend">
+            <div class="row">
+                <div class="col-md-4">
+                    <img style="width:70%; height:70%;" src="~/Pictures/Logo.jpeg" />
+                </div>
+                <div class="col-md-6">
+                    <h2 style="height:70%">User Registration</h2>
+                </div>
+            </div>
+            <hr />
+            <div class="control-group">
+                <!-- Username -->
+                <label class="control-label" for="username">Username</label>
+                <div class="controls">
+                    <input type="text" id="username" name="username" placeholder=" Enter Username" class="input-xlarge" required>
+
+                </div>
+            </div>
+
+            <div class="control-group">
+                <!-- E-mail -->
+                <label class="control-label" for="email">E-mail</label>
+                <div class="controls">
+                    <input type="text" id="email" name="email" placeholder="Enter Email" class="input-xlarge" required>
+
+                </div>
+            </div>
+
+            <div class="control-group">
+                <!-- Password-->
+                <label class="control-label" for="password">Password</label>
+                <div class="controls">
+                    <input type="password" id="password" name="password" placeholder="Password should be at least 4 characters" class="input-xlarge" required>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <!-- Password -->
+                <label class="control-label" for="password_confirm">Confirm Password </label>
+                <div class="controls">
+                    <input type="password" id="password_confirm" name="password_confirm" placeholder="Confirm Password" class="input-xlarge" required>
+
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="Questions" class="control-label"> Your Security Question:</label>
+                <div class="controls">
+                    <select name="SQuestion" id="SQuestion">
+                        <option value="Pet Name">Pet Name</option>
+                        <option value="Favorite Teacher">Favorite Teacher</option>
+                        <option value="Favorite Fast Food">Favorite Fast Food</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="YourAnswer" class="control-label"><b>Your Answer:</b></label>
+                <div class="controls">
+                    <input type="text" placeholder="Your Answer" name="YourAnswer" id="YourAnswer" required>
+                </div>
+            </div>
+            <div class="control-group">
+                <!-- Button -->
+                <div class="controls">
+                    <button class="btn btn-success">Register</button>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+
+

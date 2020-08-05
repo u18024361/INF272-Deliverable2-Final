@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = "UserRegistration";
+}
+<head>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#ImageId')
+                            .attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+    </script>
+</head>
+<form class="form-horizontal">
+    <fieldset>
+        <div id="legend">
+            <div class="row">
+                <div class="col-md-4">
+                    <img style="width:70%; height:70%;" src="~/Pictures/Logo.jpeg" />
+                  
+                </div>
+                <div class="col-md-6">
+                    <h2 style="height:70%">Employer Registration</h2>
+                    <br />
+                    <h4>Please Complete the form</h4>
+                </div>
+            </div>
+            <hr />
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="UserName"><b>Business Name</b></label>
+                    <div class="controls">
+                        <input type="text" placeholder="Enter Business Name" name="BName" id="BName">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="Name"><b>Name:</b></label>
+                    <div class="controls">
+                        <input type="text" placeholder="Enter Name" name="Name" id="Name" required>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="SurName"><b>Surname:</b></label>
+                    <div class="controls">
+                        <input type="text" placeholder="Enter Surname" name="Surname" id="Surname" required>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="EmailAddress"><b>Email Address:</b></label>
+                    <div class="controls">
+                        <input type="text" placeholder="Enter E-mail" name="Email" id="Email" required>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="Province"> <b>Province: </b></label>
+                    <div class="controls">
+                        <select name="SProvince" id="SProvince">
+                            <option value="Gauteng">Gauteng</option>
+                            <option value="Limpopo">Limpopo</option>
+                            <option value="Free State">Free State</option>
+                            <option value="Eastern Cape">Eastern Cape</option>
+                            <option value="Western Cape">Western Cape</option>
+                            <option value="Kwazulu- Natal">Kwazulu-Natal</option>
+                            <option value="North West">North West</option>
+                            <option value="Northern Cape">Northern Cape</option>
+                            <option value="Mpumalanga">Mpumalanga</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="City"> <b> City:</</b></label>
+                    <div class="controls">
+                        <select name="SCity" id="SCity">
+                            <option value="Johannesburg">Johannesburg</option>
+                            <option value="Pretoria">Pretoria</option>
+                            <option value="Durban">Durban</option>
+                            <option value="Bloemfontien">Bloemfontien</option>
+                            <option value="Cape Town">Cape Town</option>
+                            <option value="Port Elizabeth">Port Elizabeth</option>
+                            <option value="Polokwane">Polokwane</option>
+                            <option value="East London">East London</option>
+                            <option value="Stellenbosch">Stellenbosch</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="Subhurb"><b>Subhurb:</b></label>
+                    <div class="controls">
+                        <input type="text" placeholder="Enter Subhurb" name="Subhurb" id="Subhurb" required>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="control-group">
+                    <label for="Image"> <b> Image:</b></label>
+                    <div class="controls">
+                        <input type="file" name="myImage" accept="image/*" onchange="readURL(this);" />
+                        <br />
+                        <img id="ImageId" style="height:400px; width:800px; object-fit:fill; " />
+                    </div>
+                </div>
+                <hr>
+                <div class="btn-group" role="group" aria-label="Basic example" style="float:right">
+                    <button type="submit" class="btn btn-secondary">&laquo;Back</button>
+                    <button type="submit" class="btn btn-secondary">Register</button>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form>
