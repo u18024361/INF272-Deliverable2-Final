@@ -135,6 +135,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Pictures\Freelancer\plumber1.jpg" />
+    <Content Include="Pictures\Freelancer\plumber2.jpg" />
+    <Content Include="Pictures\Freelancer\plumber3.jpg" />
+    <Content Include="Pictures\Freelancer\plumber4.jpg" />
+    <Content Include="Pictures\Freelancer\plumber5.jpg" />
+    <Content Include="Pictures\Freelancer\plumber6.jpg" />
     <Content Include="Pictures\Logo.jpeg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
